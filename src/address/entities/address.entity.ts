@@ -21,7 +21,7 @@ export class AddressEntity {
   numberAddress: number;
 
   @Column({ name: 'cep', nullable: false })
-  phone: string;
+  cep: string;
 
   @Column({ name: 'city_id', nullable: false })
   cityId: number;
