@@ -8,6 +8,7 @@ import { AddressModule } from './address/address.module';
 import { CacheModule } from './cache/cache.module';
 import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { AuthModule } from './auth/auth.module';
       migrations: [`${__dirname}/migration/{*.js,.ts}`],
       migrationsRun: true,
     }),
+    JwtModule,
     UsersModule,
     StateModule,
     CityModule,
